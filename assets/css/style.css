@@ -4,7 +4,7 @@ Main Orange Color: #e67e22
 
 /*-----------------------------------------------------------------*/
 
-/* Basic Setup */
+/* BASIC SETUP*/
 
 /*-----------------------------------------------------------------*/
 
@@ -33,7 +33,7 @@ html {
 
 /*-----------------------------------------------------------------*/
 
-/* Global Components */
+/* GLOBAL COMPONENTS */
 
 /*-----------------------------------------------------------------*/
 
@@ -119,6 +119,22 @@ h3 {
     margin: 0 auto 10px auto;
 }
 
+/*-----LINKS-----*/
+
+a, 
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border-bottom 200ms, color 200ms;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
 /*-----BUTTONS-----*/
 
 .btn:link, .btn:visited {
@@ -194,7 +210,8 @@ header {
     margin: 60px 0 0 40px;
 }
 
-.main-nav li a:link, .main-nav li a:visited {
+.main-nav li a:link, 
+.main-nav li a:visited {
     padding: 5px 0;
     color: #fff;
     text-decoration: none;
@@ -205,12 +222,15 @@ header {
     transition: border-bottom 200ms;
 }
 
-.main-nav li a:hover, .main-nav li a:active {
+.main-nav li a:hover, 
+.main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
 
 /*-----------------------------------------------------------------*/
+
 /* FEATURES */
+
 /*-----------------------------------------------------------------*/
 
 .section-features .long-copy {
@@ -310,6 +330,12 @@ header {
     margin-right: 25px;
     font-weight: 300;
 }
+.btn-app,
+.btn-app:visited,
+.btn-app:active,
+.btn-app:hover {
+    border: 0;
+}
 
 .btn-app img {
     height: 50px;
@@ -338,9 +364,20 @@ header {
     width: 30px;
     text-align: center;
     color: #e67e22;
-        /* a great way to align text to icons */
-    font-size: 1200%;
+    margin-right: 10px;
+    /* a great way to align text to icons */
+    font-size: 120%;
     line-height: 120%;
     vertical-align: middle;
+    margin-top: -5px;
+}
+
+#star-icon {
+    /* font-size: 100%; */
+    margin-top: -6px;
+}
+
+#twitter-icon {
+    font-size: 100%;
     margin-top: -2px;
 }
